@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		37737C6F25CAB46000976A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37737C6E25CAB46000976A51 /* AppDelegate.swift */; };
 		37737C7125CAB46000976A51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37737C7025CAB46000976A51 /* SceneDelegate.swift */; };
-		37737C7325CAB46000976A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37737C7225CAB46000976A51 /* ViewController.swift */; };
 		37737C7625CAB46000976A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37737C7425CAB46000976A51 /* Main.storyboard */; };
 		37737C7925CAB46000976A51 /* Spisok.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37737C7725CAB46000976A51 /* Spisok.xcdatamodeld */; };
 		37737C7B25CAB46100976A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37737C7A25CAB46100976A51 /* Assets.xcassets */; };
 		37737C7E25CAB46100976A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37737C7C25CAB46100976A51 /* LaunchScreen.storyboard */; };
+		37737C9225CABA6000976A51 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37737C9125CABA6000976A51 /* NoteTableViewCell.swift */; };
+		37737C9525CABA8C00976A51 /* SpisokTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37737C9425CABA8C00976A51 /* SpisokTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37737C6B25CAB46000976A51 /* Spisok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spisok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37737C6E25CAB46000976A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37737C7025CAB46000976A51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37737C7225CAB46000976A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37737C7525CAB46000976A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37737C7825CAB46000976A51 /* Spisok.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spisok.xcdatamodel; sourceTree = "<group>"; };
 		37737C7A25CAB46100976A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37737C7D25CAB46100976A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37737C7F25CAB46100976A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37737C9125CABA6000976A51 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		37737C9425CABA8C00976A51 /* SpisokTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpisokTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,89 @@
 		37737C6D25CAB46000976A51 /* Spisok */ = {
 			isa = PBXGroup;
 			children = (
-				37737C6E25CAB46000976A51 /* AppDelegate.swift */,
-				37737C7025CAB46000976A51 /* SceneDelegate.swift */,
-				37737C7225CAB46000976A51 /* ViewController.swift */,
-				37737C7425CAB46000976A51 /* Main.storyboard */,
-				37737C7A25CAB46100976A51 /* Assets.xcassets */,
-				37737C7C25CAB46100976A51 /* LaunchScreen.storyboard */,
-				37737C7F25CAB46100976A51 /* Info.plist */,
-				37737C7725CAB46000976A51 /* Spisok.xcdatamodeld */,
+				37737C8625CAB4F900976A51 /* App */,
+				37737C8725CAB50000976A51 /* Spisok */,
+				37737C8825CAB50D00976A51 /* Supporting files */,
 			);
 			path = Spisok;
+			sourceTree = "<group>";
+		};
+		37737C8625CAB4F900976A51 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				37737C8E25CAB7EC00976A51 /* Model */,
+				37737C8D25CAB7E700976A51 /* View */,
+				37737C8C25CAB7E100976A51 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		37737C8725CAB50000976A51 /* Spisok */ = {
+			isa = PBXGroup;
+			children = (
+				37737C8B25CAB7DB00976A51 /* Model */,
+				37737C8A25CAB7D500976A51 /* View */,
+				37737C8925CAB7C900976A51 /* Controller */,
+			);
+			path = Spisok;
+			sourceTree = "<group>";
+		};
+		37737C8825CAB50D00976A51 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				37737C7A25CAB46100976A51 /* Assets.xcassets */,
+				37737C7F25CAB46100976A51 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		37737C8925CAB7C900976A51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37737C9425CABA8C00976A51 /* SpisokTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37737C8A25CAB7D500976A51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37737C7425CAB46000976A51 /* Main.storyboard */,
+				37737C9125CABA6000976A51 /* NoteTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37737C8B25CAB7DB00976A51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37737C7725CAB46000976A51 /* Spisok.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37737C8C25CAB7E100976A51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37737C6E25CAB46000976A51 /* AppDelegate.swift */,
+				37737C7025CAB46000976A51 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37737C8D25CAB7E700976A51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37737C7C25CAB46100976A51 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37737C8E25CAB7EC00976A51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37737C7925CAB46000976A51 /* Spisok.xcdatamodeld in Sources */,
-				37737C7325CAB46000976A51 /* ViewController.swift in Sources */,
 				37737C6F25CAB46000976A51 /* AppDelegate.swift in Sources */,
 				37737C7125CAB46000976A51 /* SceneDelegate.swift in Sources */,
+				37737C9225CABA6000976A51 /* NoteTableViewCell.swift in Sources */,
+				37737C9525CABA8C00976A51 /* SpisokTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +368,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8852RDP32;
-				INFOPLIST_FILE = Spisok/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Spisok/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.superstarper.dev.Spisok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +388,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8852RDP32;
-				INFOPLIST_FILE = Spisok/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Spisok/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.superstarper.dev.Spisok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
