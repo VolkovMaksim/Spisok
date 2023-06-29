@@ -148,7 +148,7 @@ class SpisokTableViewController: UITableViewController {
 
         self.tableView.estimatedRowHeight = 44
         self.tableView.tableFooterView = UIView()
-        self.tableView.backgroundView = UIImageView(image: UIImage(named: "background_soft.jpg"))
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "background_light.jpg"))
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         self.editButtonItem.image = UIImage(systemName: "list.triangle")
     }
