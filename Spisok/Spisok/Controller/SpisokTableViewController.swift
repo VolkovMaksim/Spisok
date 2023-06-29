@@ -169,7 +169,8 @@ class SpisokTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath) as! NoteTableViewCell
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont(name: "Helvetica", size: 20)
+//        cell.textLabel?.font = UIFont(name: "Bradley Hand", size: 25)
+        cell.textLabel?.font = UIFont(name: "Zhizn", size: 20)
         if listOfNotes[indexPath.row].done == false {
             cell.textLabel?.text = listOfNotes[indexPath.row].name!
             listOfNotes[indexPath.row].index = Int16(indexPath.row)

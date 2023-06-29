@@ -15,6 +15,7 @@
 		3724C4762A4CAA0A00738595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4742A4CAA0A00738595 /* LaunchScreen.storyboard */; };
 		3724C4872A4D557800738595 /* SpisokTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4862A4D557800738595 /* SpisokTableViewController.swift */; };
 		3724C4892A4D573600738595 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4882A4D573600738595 /* NoteTableViewCell.swift */; };
+		3724C4912A4DE46B00738595 /* Zhizn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4902A4DE41A00738595 /* Zhizn.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3724C4772A4CAA0A00738595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3724C4862A4D557800738595 /* SpisokTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpisokTableViewController.swift; sourceTree = "<group>"; };
 		3724C4882A4D573600738595 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		3724C4902A4DE41A00738595 /* Zhizn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zhizn.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3724C47D2A4D476000738595 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				3724C4902A4DE41A00738595 /* Zhizn.ttf */,
 				3724C4722A4CAA0A00738595 /* Assets.xcassets */,
 				3724C4772A4CAA0A00738595 /* Info.plist */,
 			);
@@ -203,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3724C4912A4DE46B00738595 /* Zhizn.ttf in Resources */,
 				3724C4762A4CAA0A00738595 /* LaunchScreen.storyboard in Resources */,
 				3724C4732A4CAA0A00738595 /* Assets.xcassets in Resources */,
 				3724C46E2A4CAA0900738595 /* Main.storyboard in Resources */,
