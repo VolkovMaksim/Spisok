@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3724C4672A4CAA0900738595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4662A4CAA0900738595 /* AppDelegate.swift */; };
 		3724C4692A4CAA0900738595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4682A4CAA0900738595 /* SceneDelegate.swift */; };
-		3724C46B2A4CAA0900738595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C46A2A4CAA0900738595 /* ViewController.swift */; };
 		3724C46E2A4CAA0900738595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3724C46C2A4CAA0900738595 /* Main.storyboard */; };
 		3724C4712A4CAA0900738595 /* Spisok.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3724C46F2A4CAA0900738595 /* Spisok.xcdatamodeld */; };
 		3724C4732A4CAA0A00738595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4722A4CAA0A00738595 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		3724C4632A4CAA0900738595 /* Spisok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spisok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3724C4662A4CAA0900738595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3724C4682A4CAA0900738595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3724C46A2A4CAA0900738595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3724C46D2A4CAA0900738595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3724C4702A4CAA0900738595 /* Spisok.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spisok.xcdatamodel; sourceTree = "<group>"; };
 		3724C4722A4CAA0A00738595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +56,87 @@
 		3724C4652A4CAA0900738595 /* Spisok */ = {
 			isa = PBXGroup;
 			children = (
-				3724C4662A4CAA0900738595 /* AppDelegate.swift */,
-				3724C4682A4CAA0900738595 /* SceneDelegate.swift */,
-				3724C46A2A4CAA0900738595 /* ViewController.swift */,
-				3724C46C2A4CAA0900738595 /* Main.storyboard */,
-				3724C4722A4CAA0A00738595 /* Assets.xcassets */,
-				3724C4742A4CAA0A00738595 /* LaunchScreen.storyboard */,
-				3724C4772A4CAA0A00738595 /* Info.plist */,
-				3724C46F2A4CAA0900738595 /* Spisok.xcdatamodeld */,
+				3724C47F2A4D477D00738595 /* App */,
+				3724C47E2A4D477000738595 /* Spisok */,
+				3724C47D2A4D476000738595 /* SupportingFiles */,
 			);
 			path = Spisok;
+			sourceTree = "<group>";
+		};
+		3724C47D2A4D476000738595 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4722A4CAA0A00738595 /* Assets.xcassets */,
+				3724C4772A4CAA0A00738595 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3724C47E2A4D477000738595 /* Spisok */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4852A4D47B500738595 /* Model */,
+				3724C4842A4D47AF00738595 /* View */,
+				3724C4832A4D47A800738595 /* Controller */,
+			);
+			path = Spisok;
+			sourceTree = "<group>";
+		};
+		3724C47F2A4D477D00738595 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4822A4D479A00738595 /* Model */,
+				3724C4812A4D479400738595 /* View */,
+				3724C4802A4D478900738595 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3724C4802A4D478900738595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4662A4CAA0900738595 /* AppDelegate.swift */,
+				3724C4682A4CAA0900738595 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3724C4812A4D479400738595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4742A4CAA0A00738595 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3724C4822A4D479A00738595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3724C4832A4D47A800738595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3724C4842A4D47AF00738595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3724C46C2A4CAA0900738595 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3724C4852A4D47B500738595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3724C46F2A4CAA0900738595 /* Spisok.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3724C4712A4CAA0900738595 /* Spisok.xcdatamodeld in Sources */,
-				3724C46B2A4CAA0900738595 /* ViewController.swift in Sources */,
 				3724C4672A4CAA0900738595 /* AppDelegate.swift in Sources */,
 				3724C4692A4CAA0900738595 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,12 +361,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35F72NUF9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Spisok/Info.plist;
+				INFOPLIST_FILE = Spisok/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Список";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +376,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.rus-volk.Spisok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +394,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35F72NUF9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Spisok/Info.plist;
+				INFOPLIST_FILE = Spisok/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Список";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +409,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.rus-volk.Spisok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
