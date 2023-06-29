@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Spisok Table View Controller-->
+        <!--Список-->
         <scene sceneID="HRT-qu-m7h">
             <objects>
                 <tableViewController id="v9b-qq-03L" customClass="SpisokTableViewController" customModule="Spisok" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,13 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Note" id="hJe-mY-JPb" customClass="NoteTableViewCell" customModule="Spisok" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Note" id="hJe-mY-JPb" customClass="NoteTableViewCell" customModule="Spisok" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hJe-mY-JPb" id="3rN-HD-ask">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -31,7 +32,16 @@
                             <outlet property="delegate" destination="v9b-qq-03L" id="zfm-Ps-VgU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Dpc-C9-kyL"/>
+                    <navigationItem key="navigationItem" title="Список" id="Dpc-C9-kyL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Bx-lv-6Yp">
+                            <connections>
+                                <action selector="addNewNote:" destination="v9b-qq-03L" id="Jvf-gG-ECb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationBar" destination="Dpc-C9-kyL" id="zdy-Lc-gYd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46j-zo-Gr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
