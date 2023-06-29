@@ -254,6 +254,8 @@ class SpisokTableViewController: UITableViewController {
                 let attributeString = NSMutableAttributedString(string: self.listOfNotes[indexPath.row].name!)
                 attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
                 self.tableView.cellForRow(at: indexPath)?.textLabel?.attributedText = attributeString
+                // обновить tableView
+                self.tableView.reloadData()
                 // меняем значение Done на true
                 self.listOfNotes[indexPath.row].done = true
                 completion(true)
@@ -272,6 +274,8 @@ class SpisokTableViewController: UITableViewController {
                 let attributeString = NSMutableAttributedString(string: self.listOfNotes[indexPath.row].name!)
                 attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 0, range: NSMakeRange(0, attributeString.length))
                 self.tableView.cellForRow(at: indexPath)?.textLabel?.attributedText = attributeString
+                // обновить tableView
+                self.tableView.reloadData()
                 completion(true)
                 // сохраняем контекст (сохраняем значение Done в контексте)
                 self.saveContext()
