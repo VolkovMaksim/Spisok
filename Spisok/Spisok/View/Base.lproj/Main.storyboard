@@ -34,12 +34,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Список" id="Dpc-C9-kyL">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Bx-lv-6Yp">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="addNewNote:" destination="v9b-qq-03L" id="Jvf-gG-ECb"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="3Bx-lv-6Yp">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addNewNote:" destination="v9b-qq-03L" id="Jvf-gG-ECb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sort" image="arrow.up.arrow.down" catalog="system" id="Mj0-7I-ePb">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sortButton:" destination="v9b-qq-03L" id="hRe-lT-rBl"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="navigationBar" destination="Dpc-C9-kyL" id="zdy-Lc-gYd"/>
@@ -70,6 +78,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

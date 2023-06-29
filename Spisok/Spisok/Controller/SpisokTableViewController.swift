@@ -44,6 +44,28 @@ class SpisokTableViewController: UITableViewController {
         present(alertController, animated: true)
     }
     
+    // MARK: - Sorting
+    
+    @IBAction func sortButton(_ sender: UIBarButtonItem) {
+        sortNotes()
+    }
+    
+    private func sortNotes() {
+        var sortArray = [Note]()
+        for item in listOfNotes {
+            if item.done == true {
+                sortArray.append(item)
+            } else {
+                sortArray.insert(item, at: 0)
+            }
+        }
+        listOfNotes = sortArray
+        // обновить tableView
+        self.tableView.reloadData()
+        // listOfNotes: [Note] - массив c сущностями, в котором содержатся все отображаемые в tableView элементы
+        
+    }
+    
     // MARK: - newNote
     
     // стучимся в AppDelegate и сохраняем наши данные в CoreData
@@ -83,7 +105,6 @@ class SpisokTableViewController: UITableViewController {
         
         do {
             try context.save()
-//            print("Сохранение контекста")
         } catch let error as NSError {
             print(error.localizedDescription)
         }
@@ -129,6 +150,7 @@ class SpisokTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "background_soft.jpg"))
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.editButtonItem.image = UIImage(systemName: "list.triangle")
     }
 
     // MARK: - Table view data source
