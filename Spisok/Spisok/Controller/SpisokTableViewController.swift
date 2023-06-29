@@ -154,6 +154,7 @@ class SpisokTableViewController: UITableViewController {
             let attributeString = NSMutableAttributedString(string: (cell.textLabel?.text)!)
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 0, range: NSMakeRange(0, attributeString.length))
             cell.textLabel?.attributedText = attributeString
+            cell.textLabel?.textColor = .black
             saveContext()
             return cell
         } else {
@@ -162,6 +163,7 @@ class SpisokTableViewController: UITableViewController {
             let attributeString = NSMutableAttributedString(string: (cell.textLabel?.text)!)
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
             cell.textLabel?.attributedText = attributeString
+            cell.textLabel?.textColor = .lightGray
             saveContext()
             return cell
         }
